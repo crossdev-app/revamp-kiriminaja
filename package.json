@@ -9,6 +9,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "bootstrap": "^5.0.2",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.25.3",

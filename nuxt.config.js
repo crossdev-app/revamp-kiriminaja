@@ -24,13 +24,23 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ["@nuxtjs/fontawesome"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt",
   ],
+
+  // Set Fontawesome
+  fontawesome: {
+    component: "Fa",
+    suffix: false,
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
