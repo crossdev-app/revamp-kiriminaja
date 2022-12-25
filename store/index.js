@@ -1,5 +1,6 @@
 export const state = () => ({
   showSidebar: false,
+  currentPage: "Home",
 });
 
 export const mutations = {

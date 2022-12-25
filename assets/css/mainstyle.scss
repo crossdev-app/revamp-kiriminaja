@@ -14,6 +14,7 @@ $base-color-40: rgba(111, 47, 171, 0.4);
 $base-color-30: rgba(111, 47, 171, 0.3);
 $base-color-20: rgba(111, 47, 171, 0.2);
 $base-color-10: rgba(111, 47, 171, 0.1);
+$base-white: #f6edff;
 
 // Custom Breakpoint
 $screen-mobile: 1200px;
@@ -31,6 +32,9 @@ $screen-mobile: 1200px;
 
 body {
   font-family: $font-p;
+  min-height: 100vh;
+  background-color: $base-white;
+
   .nav-logo {
     height: 40px;
   }
@@ -51,6 +55,14 @@ body {
 
   .cursor-pointer {
     cursor: pointer;
+  }
+
+  .bg-base-white {
+    background-color: $base-white;
+  }
+
+  .text-justify {
+    text-align: justify;
   }
 
   nav {
@@ -118,6 +130,98 @@ body {
       &:hover {
         background-color: $base-color-90;
       }
+    }
+  }
+
+  main {
+    min-height: 120vh;
+    padding-top: 90px;
+  }
+
+  footer {
+    a {
+      text-decoration: none;
+      color: #666;
+      margin-bottom: 4px;
+
+      &:hover {
+        color: $base-color;
+      }
+    }
+
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .ftr-part {
+      height: max-content;
+      width: 50%;
+      margin-bottom: 14px;
+
+      @include scm {
+        width: 100%;
+        padding: 0px !important;
+        margin-bottom: 20px;
+      }
+    }
+
+    .ftr-part-r {
+      ul {
+        @include scm {
+          width: 50%;
+        }
+      }
+      @include scm {
+        justify-content: start;
+      }
+    }
+
+    .ftr-part-b {
+      height: max-content;
+      width: 50%;
+
+      @include scm {
+        width: 100%;
+        padding: 0px !important;
+      }
+    }
+
+    .ftr-part-b-r {
+      display: flex;
+      justify-content: center;
+
+      @include scm{
+        justify-content: flex-start;
+        margin-bottom: 14px;
+      }
+    }
+
+
+    .ftr-s-icon {
+      height: 35px;
+      width: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $base-color-80;
+      border-radius: 50%;
+      background-color: #e3d5fd;
+    }
+
+    .ftr-icon-container {
+      height: 30px;
+      width: 30px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-right: 14px;
+    }
+
+    .ftr-icon {
+      font-size:  24px;
+      color: $base-color-darker;
     }
   }
 }

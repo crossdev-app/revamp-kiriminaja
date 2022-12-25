@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar p-4">
+    <nav :class='[isScrolled ? "navbar fixed-top p-3 bg-base-white shadow-sm" : "navbar fixed-top p-3"]'>
         <sidebar />
         <div class="container">
             <div class="m-show" @click="toggleSidebar">
@@ -48,10 +48,24 @@ import Sidebar from './Sidebar.vue'
 export default {
     components: { Brandlogo, Sidebar },
     name: "Navbar",
+    data(){
+        return{
+            isScrolled: false,
+        }
+    },
     methods: {
         toggleSidebar(){
             this.$store.commit('toggleSidebar')
+        },
+        handleScroll(){
+            this.isScrolled = window.scrollY === 0 ? false : true;
         }
+    },
+    beforeMount () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy () {
+        window.removeEventListener('scroll', this.handleScroll);
     },
 }
 </script>

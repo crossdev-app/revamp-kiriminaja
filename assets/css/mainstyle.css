@@ -7,6 +7,8 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: #f6edff;
 }
 body .nav-logo {
   height: 40px;
@@ -26,6 +28,12 @@ body .m-show {
 }
 body .cursor-pointer {
   cursor: pointer;
+}
+body .bg-base-white {
+  background-color: #f6edff;
+}
+body .text-justify {
+  text-align: justify;
 }
 body nav #sidebar {
   height: 100vh;
@@ -83,4 +91,89 @@ body nav .btn-register {
 }
 body nav .btn-register:hover {
   background-color: rgba(111, 47, 171, 0.9);
+}
+body main {
+  min-height: 120vh;
+  padding-top: 90px;
+}
+body footer a {
+  text-decoration: none;
+  color: #666;
+  margin-bottom: 4px;
+}
+body footer a:hover {
+  color: rgb(111, 47, 171);
+}
+body footer li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+body footer .ftr-part {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 50%;
+  margin-bottom: 14px;
+}
+@media (max-width: 1200px) {
+  body footer .ftr-part {
+    width: 100%;
+    padding: 0px !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  body footer .ftr-part-r ul {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  body footer .ftr-part-r {
+    justify-content: start;
+  }
+}
+body footer .ftr-part-b {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  body footer .ftr-part-b {
+    width: 100%;
+    padding: 0px !important;
+  }
+}
+body footer .ftr-part-b-r {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  body footer .ftr-part-b-r {
+    justify-content: flex-start;
+    margin-bottom: 14px;
+  }
+}
+body footer .ftr-s-icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(111, 47, 171, 0.8);
+  border-radius: 50%;
+  background-color: #e3d5fd;
+}
+body footer .ftr-icon-container {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 14px;
+}
+body footer .ftr-icon {
+  font-size: 24px;
+  color: rgb(99, 42, 153);
 }/*# sourceMappingURL=mainstyle.css.map */
