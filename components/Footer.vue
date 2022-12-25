@@ -44,7 +44,7 @@
             <a class="link" href="#">Management Order</a>
           </li>
           <li>
-            <a class="link" href="#">Integrasi API</a>
+            <nuxt-link to="/integration">Integrasi API</nuxt-link>
           </li>
           <li>
             <a class="link" href="#">Karir</a>
@@ -55,7 +55,7 @@
             <span class="fw-bold">KiriminAja</span>
           </li>
           <li>
-            <a class="link" href="#">Tentang Kami</a>
+            <nuxt-link to="/about">Tentang Kami</nuxt-link>
           </li>
           <li>
             <a class="link" href="#">Syarat & Ketentuan</a>

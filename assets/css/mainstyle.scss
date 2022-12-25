@@ -65,6 +65,25 @@ body {
     text-align: justify;
   }
 
+  .banner-list-icon {
+    font-size: 20px;
+  }
+
+  .btn-register {
+    background-color: $base-color;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $base-color-90;
+    }
+  }
+
+  .sec-sub {
+    color: $base-color;
+  }
+
   nav {
     #sidebar {
       height: 100vh;
@@ -120,22 +139,248 @@ body {
       font-size: 22px;
       cursor: pointer;
     }
-
-    .btn-register {
-      background-color: $base-color;
-      color: #fff;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        background-color: $base-color-90;
-      }
-    }
   }
 
   main {
     min-height: 120vh;
     padding-top: 90px;
+
+    #top-banner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+
+      #banner-info {
+        width: 60%;
+        // background-color: rgba($color: #000000, $alpha: 0.2);
+
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+
+        @include scm {
+          width: 100%;
+          max-width: 800px;
+        }
+      }
+
+      #img-banner-container {
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+
+        @include scm {
+          width: 100%;
+          max-width: 800px;
+        }
+      }
+    }
+
+    #top-banner-intgr {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap-reverse;
+
+      #banner-intgr-info {
+        width: 40%;
+        // background-color: rgba($color: #000000, $alpha: 0.2);
+
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+
+        @include scm {
+          width: 100%;
+          max-width: 800px;
+        }
+      }
+
+      #img-banner-intgr-container {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+
+        @include scm {
+          width: 100%;
+          max-width: 800px;
+        }
+      }
+    }
+
+    .btn-banner-container {
+      display: flex;
+      margin-top: 30px;
+    }
+  }
+
+  section {
+    margin: 40px 0px;
+
+    h2 {
+      font-weight: bolder;
+      max-width: 500px;
+    }
+
+    .sec-sub-title {
+      font-size: 16px;
+      color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    #vsms-list {
+      width: 45%;
+      ul {
+        padding-left: 0px;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          padding: 8px;
+          margin: 12px 0px;
+          background-color: rgba($color: #eaddff, $alpha: 1);
+          border-radius: 8px;
+          border: 1px solid rgba($color: #000000, $alpha: 0.3);
+        }
+      }
+
+      @include scm {
+        width: 100%;
+      }
+    }
+
+    #vsms-expl {
+      width: 50%;
+
+      @include scm {
+        width: 100%;
+      }
+    }
+
+    #lead-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      .leads-box {
+        width: 20%;
+        padding: 12px;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+        @include scm {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #lak-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+
+    img {
+      width: 50%;
+
+      @include scm {
+        width: 100%;
+      }
+    }
+
+    #lak-txt {
+      width: 50%;
+
+      .btn-register {
+        width: max-content;
+      }
+
+      @include scm {
+        width: 100%;
+        padding: 0px !important;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #mobile-app-banner {
+    background-color: $base-color-darker;
+    min-height: 350px;
+    padding: 0px 20px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    #img-banner-container {
+      width: 30%;
+      display: flex;
+      align-items: flex-end;
+
+      #img-banner {
+        width: 100%;
+
+        @include scm {
+          width: 70%;
+        }
+      }
+
+      @include scm {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    #banner-caption {
+      width: 50%;
+      max-width: 400px;
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        span {
+          opacity: 0.7;
+        }
+      }
+
+      p {
+        opacity: 0.5;
+      }
+
+      #btn-app-market-container {
+        display: flex;
+
+        .btn-app-market {
+          width: 130px;
+          margin-right: 4px;
+        }
+
+        @include scm {
+          justify-content: center;
+        }
+      }
+
+      @include scm {
+        width: 100%;
+        max-width: 500px;
+        height: 300px;
+        text-align: center;
+      }
+    }
   }
 
   footer {
@@ -192,12 +437,11 @@ body {
       display: flex;
       justify-content: center;
 
-      @include scm{
+      @include scm {
         justify-content: flex-start;
         margin-bottom: 14px;
       }
     }
-
 
     .ftr-s-icon {
       height: 35px;
@@ -220,7 +464,7 @@ body {
     }
 
     .ftr-icon {
-      font-size:  24px;
+      font-size: 24px;
       color: $base-color-darker;
     }
   }

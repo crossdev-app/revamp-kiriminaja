@@ -1,17 +1,19 @@
 <template>
   <div>
     <navbar />
-    <Content />
+    <home />
+    <mobileappbanner />
     <Footer />
   </div>
 </template>
 
 <script>
-import Content from '~/components/Content.vue'
 import Footer from '~/components/Footer.vue'
+import Home from '~/components/Home.vue'
+import Mobileappbanner from '~/components/Mobileappbanner.vue'
 import Navbar from '~/components/Navbar.vue'
 export default {
-  components: { Navbar, Footer, Content },
+  components: { Navbar, Footer, Mobileappbanner, Home },
   name: 'IndexPage'
 }
 </script>
