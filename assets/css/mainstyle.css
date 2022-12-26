@@ -69,6 +69,15 @@ body .custom-card .c-card-title {
   font-weight: bolder;
   font-size: 18px;
 }
+body .btn-banner-nvg {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
 body nav #sidebar {
   height: 100vh;
   width: -webkit-max-content;
@@ -242,6 +251,21 @@ body section #lead-container .leads-box span {
   body section #lead-container .leads-box {
     width: 50%;
   }
+}
+body #cek-ongkir-comp {
+  display: flex;
+}
+body #cek-ongkir-comp #co-from {
+  width: 30%;
+}
+body #cek-ongkir-comp #co-to {
+  width: 30%;
+}
+body #cek-ongkir-comp #co-w {
+  width: 30%;
+}
+body #cek-ongkir-comp #co-s {
+  width: 10%;
 }
 body #hs1-container {
   display: flex;

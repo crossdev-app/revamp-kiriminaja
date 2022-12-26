@@ -12,8 +12,10 @@
                 <div class="nav-item px-3 py-2 rounded-pill btn-register">Daftar Gratis <Fa icon="arrow-right" style="margin-left: 5px;"/></div>
                 <div class="nav-item px-3 py-2 rounded-pill"><icondocumentation /> Dokumentasi</div>
             </div>
-            <div id="banner-navigation">
-                
+            <div id="banner-navigation" class="my-2 d-flex align-items-center">
+                <span class="btn-banner-nvg"><Fa icon="arrow-left" /></span>
+                <span class="mx-3">1 / 4</span>
+                <span class="btn-banner-nvg"><Fa icon="arrow-right" /></span>
             </div>
         </div>
         <div id="img-banner-container">
