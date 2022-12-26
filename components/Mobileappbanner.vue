@@ -1,5 +1,5 @@
 <template>
-  <div id="mobile-app-banner" class="container my-4">
+  <div id="mobile-app-banner" class="container my-4 rounded-3">
     <div id="img-banner-container">
         <img id="img-banner" src="https://kiriminaja-static-file.imgix.net/home-v3/call-to-action-compressed.webp" alt="" srcset="">
     </div>

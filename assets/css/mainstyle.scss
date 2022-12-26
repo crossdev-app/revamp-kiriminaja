@@ -84,6 +84,28 @@ body {
     color: $base-color;
   }
 
+  .custom-card {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 8px;
+
+    .box-icon-c {
+      height: 40px;
+      width: 40px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $base-color-10;
+    }
+
+    .c-card-title {
+      font-weight: bolder;
+      font-size: 18px;
+    }
+  }
+
   nav {
     #sidebar {
       height: 100vh;
@@ -242,7 +264,7 @@ body {
           list-style: none;
           display: flex;
           align-items: center;
-          padding: 8px;
+          padding: 12px;
           margin: 12px 0px;
           background-color: rgba($color: #eaddff, $alpha: 1);
           border-radius: 8px;
@@ -282,6 +304,100 @@ body {
 
         @include scm {
           width: 50%;
+        }
+      }
+    }
+  }
+
+  #hs1-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    .custom-card {
+      width: 30%;
+      background-color: rgba($color: #eaddff, $alpha: 1);
+
+      @include scm {
+        width: 80%;
+      }
+    }
+  }
+
+  #hs2-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+
+      @include scm {
+        width: 80%;
+      }
+    }
+
+    #hs2-list {
+      width: 50%;
+      padding: 20px;
+
+      ul {
+        padding-left: 0px;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          padding: 12px;
+          margin: 12px 0px;
+          border-radius: 8px;
+          border: 1px solid rgba($color: #000000, $alpha: 0.3);
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.8);
+          }
+        }
+      }
+
+      @include scm {
+        width: 80%;
+      }
+    }
+  }
+
+  .intgr-sec-2 {
+    background-color: $base-color-10;
+    padding: 20px;
+    border-radius: 12px;
+
+    .intgr-sec-2-ccc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+
+      .custom-card {
+        width: 23%;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+
+        @include scm {
+          width: 80%;
+        }
+      }
+
+      .intgr-icon-partner {
+        width: 15%;
+        padding: 8px;
+        margin: 8px;
+
+        img {
+          width: 100%;
+        }
+
+        @include scm {
+          width: 25%;
         }
       }
     }

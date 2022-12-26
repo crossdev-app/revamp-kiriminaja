@@ -24,8 +24,9 @@
 
 <script>
 import iconcheckfillgreen from './icon-set/iconcheckfillgreen.vue'
+import Icondocumentation from './icon-set/icondocumentation.vue'
 export default {
-  components: { iconcheckfillgreen },
+  components: { iconcheckfillgreen, Icondocumentation },
     data(){
         return{
             bannerData: {
